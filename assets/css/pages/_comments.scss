@@ -1,0 +1,281 @@
+.comments-wrapper {
+  width: 100%;
+
+  height: 100%;
+  margin-top: 100px;
+
+  // border: 2px solid black;
+  .comments {
+    width: 100%;
+
+
+    // border: 2px solid red;
+    .comments-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: block;
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    // .even {
+    //   background-color: #E8E8E8;
+    // }
+
+    .comments-inner {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+
+      .comment {
+        width: 100%;
+        // height: 100px;
+        // border: 2px black dashed;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+
+      .comment-author {
+        padding: 0;
+        display: block;
+        height: 20px;
+
+        img {
+          max-width: 100%;
+          width: 60px;
+          height: auto;
+          background: #fff;
+          float: left;
+          margin: 0 10px 0 0px;
+          border-radius: 50%;
+        }
+
+        cite {
+          display: inline-block;
+          margin: 0;
+          text-transform: capitalize;
+          font-weight: 500;
+        }
+
+        span {
+          background: none;
+          font-size: 0.9rem;
+          font-weight: 300;
+          margin: 0;
+          padding: 0;
+          display: none;
+        }
+      }
+
+      .comment-meta {
+        display: block;
+        list-style: none;
+        float: right;
+        margin-left: 70px;
+
+        a {
+          font-size: 0.8rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        // font-weight: 500;
+        padding-top: 10px;
+        margin-left: 70px;
+      }
+
+      .reply {
+        margin-left: auto;
+
+        a {
+          background-color: #d8d8d8;
+          width: 100px;
+          height: 30px;
+          padding: 4px 10px;
+          font-size: 0.8rem;
+          font-weight: 500;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-bottom: 15px;
+  }
+
+  .comment-respond {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    box-sizing: border-box;
+    position: relative;
+    // margin-top: 300px;
+
+    .comment-reply-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+
+      #cancel-comment-reply-link {
+        background-color: #d8d8d8;
+        padding: 2px 10px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-right: 15px;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 15px;
+      }
+    }
+
+
+
+    form {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+
+      .logged-in-as {
+        font-size: 0.9rem;
+        margin-top: 2px;
+
+        a:hover {
+          opacity: 0.5;
+        }
+      }
+
+      .comment-notes {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 5px;
+
+        #email-notes {
+          background: none;
+          padding: 0;
+          margin: 0;
+          font-size: 0.9rem;
+          width: 100%;
+          font-weight: 400;
+        }
+
+        .required {
+          background: none;
+          font-size: 1rem;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .comment-form-comment {
+        margin-top: 10px;
+        box-sizing: border-box;
+
+        label {
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+
+        textarea {
+          width: 100%;
+          outline: none;
+          font-size: 1rem;
+          font-family: "Red Hat Text", sans-serif;
+          border: none;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
+          border-radius: 6px;
+          margin-top: 15px;
+          padding: 5px 15px;
+          box-sizing: border-box;
+          resize: none;
+          overflow: auto;
+        }
+      }
+
+      input {
+        box-sizing: border-box;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+        border-radius: 6px;
+        width: 50%;
+        margin: 5px 0;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        font-family: "Red Hat Text", sans-serif;
+
+
+        padding: 5px 15px;
+      }
+
+      textarea:focus {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+      }
+
+      input:focus {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.30);
+      }
+
+      .comment-form-author,
+      .comment-form-email,
+      .comment-form-url {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+
+        span {
+          background: none;
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+          ;
+        }
+      }
+
+      #wp-comment-cookies-consent {
+        width: 10%;
+        box-shadow: none;
+        margin-top: 10px;
+      }
+
+      .form-submit {
+        display: flex;
+
+        .submit {
+          border-radius: 5px;
+          width: 120px;
+          height: 30px;
+          margin-top: 15px;
+          margin-left: auto;
+          padding: 0;
+          background-color: $colorDark;
+          border: none;
+          outline: none;
+          font-family: "Red Hat Text", sans-serif;
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: white;
+          cursor: pointer;
+          transition: 0.2s;
+        }
+
+        .submit:active {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
