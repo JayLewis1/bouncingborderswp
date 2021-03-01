@@ -9,61 +9,70 @@ Author: Jay Lewis
 
 /* red-hat-text-regular - latin */
 @font-face {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/red-hat-text-v3-latin-regular.eot');
+  src: url("/assets/fonts/red-hat-text-v3-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local('Red Hat Text'), local('RedHatText-Regular'),
-    url('/assets/fonts/red-hat-text-v3-latin-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('/assets/fonts/red-hat-text-v3-latin-regular.woff2') format('woff2'),
+  src: local("Red Hat Text"), local("RedHatText-Regular"),
+    url("/assets/fonts/red-hat-text-v3-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/fonts/red-hat-text-v3-latin-regular.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-    url('/assets/fonts/red-hat-text-v3-latin-regular.woff') format('woff'),
+      url("/assets/fonts/red-hat-text-v3-latin-regular.woff") format("woff"),
     /* Modern Browsers */
-    url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap') format('truetype'),
+      url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap")
+      format("truetype"),
     /* Safari, Android, iOS */
-    url('/assets/fonts/red-hat-text-v3-latin-regular.svg#RedHatText') format('svg');
+      url("/assets/fonts/red-hat-text-v3-latin-regular.svg#RedHatText")
+      format("svg");
   /* Legacy iOS */
 }
 
 /* red-hat-text-500 - latin */
 @font-face {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  src: url('/assets/fonts/red-hat-text-v3-latin-500.eot');
+  src: url("/assets/fonts/red-hat-text-v3-latin-500.eot");
   /* IE9 Compat Modes */
-  src: local('Red Hat Text Medium'), local('RedHatText-Medium'),
-    url('/assets/fonts/red-hat-text-v3-latin-500.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('/assets/fonts/red-hat-text-v3-latin-500.woff2') format('woff2'),
+  src: local("Red Hat Text Medium"), local("RedHatText-Medium"),
+    url("/assets/fonts/red-hat-text-v3-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/fonts/red-hat-text-v3-latin-500.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-    url('/assets/fonts/red-hat-text-v3-latin-500.woff') format('woff'),
+      url("/assets/fonts/red-hat-text-v3-latin-500.woff") format("woff"),
     /* Modern Browsers */
-    url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap') format('truetype'),
+      url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap")
+      format("truetype"),
     /* Safari, Android, iOS */
-    url('/assets/fonts/red-hat-text-v3-latin-500.svg#RedHatText') format('svg');
+      url("/assets/fonts/red-hat-text-v3-latin-500.svg#RedHatText")
+      format("svg");
   /* Legacy iOS */
 }
 
 /* red-hat-text-700 - latin */
 @font-face {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 700;
-  src: url('/assets/fonts/red-hat-text-v3-latin-700.eot');
+  src: url("/assets/fonts/red-hat-text-v3-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local('Red Hat Text Bold'), local('RedHatText-Bold'),
-    url('/assets/fonts/red-hat-text-v3-latin-700.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('/assets/fonts/red-hat-text-v3-latin-700.woff2') format('woff2'),
+  src: local("Red Hat Text Bold"), local("RedHatText-Bold"),
+    url("/assets/fonts/red-hat-text-v3-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/fonts/red-hat-text-v3-latin-700.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-    url('/assets/fonts/red-hat-text-v3-latin-700.woff') format('woff'),
+      url("/assets/fonts/red-hat-text-v3-latin-700.woff") format("woff"),
     /* Modern Browsers */
-    url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap') format('truetype'),
+      url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap")
+      format("truetype"),
     /* Safari, Android, iOS */
-    url('/assets/fonts/red-hat-text-v3-latin-700.svg#RedHatText') format('svg');
+      url("/assets/fonts/red-hat-text-v3-latin-700.svg#RedHatText")
+      format("svg");
   /* Legacy iOS */
 }
 
@@ -79,7 +88,7 @@ body {
   background: white;
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   color: #212020;
 }
 

@@ -89,7 +89,9 @@ $posts = get_posts($args);
         <img id="lpPhoto" src="<?php the_post_thumbnail_url(); ?>" alt="Vietnam Fields"></img>
       </div>
       <div id="rightLP">
-        <h2 id="lpHeading"> <a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
+        <a id="lpHeading" href="<?php the_permalink(); ?>"> 
+          <h2><?php the_title(); ?></h2>
+        </a>
         <!-- <h3 id="lpSubHeading">Hanoi</h3> -->
         <p id="lpParagraph"><?php 
 // Display the Post Excerpt

@@ -26,7 +26,6 @@ html:not([data-scroll="0"]) {
     margin-bottom: 30px;
   }
 
-
   .blogGrid {
     margin-bottom: 150px;
     display: grid;
@@ -70,7 +69,6 @@ html:not([data-scroll="0"]) {
 
     @media (max-width: 640px) {
       grid-template-columns: 1fr;
-
     }
 
     @media (min-width: 640px) and (max-width: 868px) {
@@ -176,43 +174,134 @@ html:not([data-scroll="0"]) {
       margin: 25px 0;
     }
     .table-of-contents {
-      width:100%;
+      width: 100%;
       display: flex;
-      margin-bottom: 25px;
+      margin: 50px 0;
+      border-radius: 5px;
+      padding: 0;
+      overflow: hidden;
       .table-wrapper {
         display: flex;
         flex-direction: column;
-        padding: 5px;
-        border: 3px solid $blue;
-        width: 60%;
+        // padding: 15px;
+        padding-right: 5px;
+        width: 50%;
         margin-right: 15px;
-        h3 {
-          margin-bottom: 15px;
+        .contents-heading {
+          margin-bottom: 25px;
+          font-size: 1.5rem;
+          font-weight: 600;
         }
         ol {
           margin-left: 25px;
           li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            color: $blue;
+            a {
+              color: $blue;
+              text-decoration: underline;
+              padding-bottom: 25px;
+            }
           }
           a:hover {
             color: $blue;
+            text-decoration: none;
           }
         }
       }
-      img {
-        width:35%;
+      .italy-map {
+        width: 50% !important;
+        height: auto !important;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+      }
+      // .img-wrapper {
+      //   width: 50%;
+      //   background: none;
+      //   padding: 0;
+      //   margin: 0;
+      //   margin-left: auto;
+      //   display: flex;
+      // }
+      @media (max-width: 430px) {
+        flex-direction: column;
+        box-shadow: none;
+        overflow: visible;
+        .table-wrapper {
+          width: 100%;
+          margin-bottom: 25px;
+          border-radius: 5px;
+          padding: 10px 5px;
+          h3 {
+            // margin : 0 auto;
+            margin-bottom: 15px;
+          }
+          ol {
+            margin-left: 5px;
+          }
+        }
+        .italy-map {
+          width: 100% !important;
+        }
+      }
+      @media (min-width: 431px) and (max-width: 430px) {
+        flex-direction: column;
+        box-shadow: none;
+        overflow: visible;
+        .table-wrapper {
+          width: 100%;
+          margin-bottom: 25px;
+          border-radius: 5px;
+          padding: 10px 5px;
+          h3 {
+            // margin : 0 auto;
+            margin-bottom: 15px;
+          }
+          ol {
+            margin-left: 5px;
+          }
+        }
+        .italy-map {
+          width: 100% !important;
+        }
+      }
+      @media (min-width: 431px) and (max-width: 780px) {
+        flex-direction: column;
+        box-shadow: none;
+        overflow: visible;
+        .table-wrapper {
+          width: 100%;
+          margin-bottom: 25px;
+          border-radius: 5px;
+          padding: 10px 5px;
+          h3 {
+            // margin : 0 auto;
+            margin-bottom: 15px;
+          }
+        }
+        .italy-map {
+          width: 100% !important;
+        }
       }
     }
   }
-
   .tour-img-wrapper {
     width: 100%;
     display: flex;
-    a { 
+    margin: 25px 0;
+    a {
       width: 50%;
       margin-right: 15px;
+      border-radius: 5px;
       img {
         width: 100%;
+        border-radius: 5px;
+      }
+      p {
+        margin-top: 5px;
+        color: $blue;
+        font-size: 0.9rem;
       }
     }
     .tour-info {
@@ -221,54 +310,220 @@ html:not([data-scroll="0"]) {
       flex-direction: column;
       padding: 0;
       p {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         margin-top: 0;
+      }
+      b {
+        font-weight: 500;
+        color: $pink;
+      }
+      .sight-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: -5px;
+        margin-left: 20px;
+        li {
+          // list-style-type: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    @media (max-width: 780px) {
+      flex-direction: column-reverse;
+      margin: 25px 0;
+      a {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .tour-info {
+        width: 100%;
       }
     }
   }
+  .section-container {
+    margin: 50px 0;
+    ul {
+      li {
+        list-style-type: none;
+        margin-bottom: 10px;
+        a {
+          color: $blue;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .tips-list {
+      li {
+        list-style-type: decimal;
+        padding-left: 10px;
+        margin-left: 15px;
+        margin-bottom: 25px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .section-heading {
+    font-size: 1.3rem;
+    text-align: center;
+  }
   .tour-stop {
-    margin-bottom: 25px;
+    margin: 30px 0;
     h3 {
       margin-bottom: 15px;
-      margin-left: 15px;
+      font-size: 1.2rem;
     }
     p {
       margin-bottom: 15px;
-    
+    }
+    a {
+      color: $blue;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .body-list {
+      margin: 25px;
+      li {
+        margin-bottom: 10px;
+      }
     }
     .information-point {
       width: 100%;
       display: flex;
       flex-direction: column;
-      // border: 2px orange solid;
-      box-shadow : $shadow;
+      box-shadow: $shadow;
       border-radius: 8px;
-      padding: 20px;
-
+      padding: 20px 30px;
+      margin: 50px auto;
+      max-width: 600px;
+      p {
+        margin: 0;
+        margin-bottom: 15px;
+        b {
+          font-weight: 500;
+        }
+      }
       h4 {
         font-weight: 500;
         font-size: 1.2rem;
         margin-bottom: 15px;
       }
-      .details{
+      .details {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         margin-bottom: 15px;
-        margin-left: 30px;
-        p {
-          font-size: 1rem;
-          margin: 0;
+      }
+      ul {
+        width: 100%;
+        li {
+          list-style: none;
+          margin-bottom: 15px;
+          display: flex;
+          p {
+            font-size: 1rem;
+            margin: 0;
+            color: $pink;
+          }
+          .right {
+            margin-left: auto;
+            color: $colorDark;
+          }
+          @media (max-width: 450px) {
+            flex-direction: column;
+            .right {
+              margin: 5px 0;
+            }
+          }
         }
+      }
+      b {
+        font-weight: 500;
       }
       .opening-times {
         display: flex;
         flex-direction: column;
         ul {
-          margin-left: 30px;
+          // margin-left: 30px;
           margin-bottom: 15px;
+          li {
+            list-style-type: none;
+          }
+        }
+      }
+      @media (max-width: 400px) {
+        padding: 0;
+        box-shadow: none;
+        .details {
+          margin-left: 0px;
+        }
+        .opening-times {
+          ul {
+            margin-left: 0px;
+          }
         }
       }
     }
+  }
+  .spending-container {
+    width: 300px;
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px auto;
+
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    ul {
+      width: 100%;
+      li {
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 25px;
+        p {
+          color: $pink;
+          margin: 0;
+        }
+        .right {
+          margin-left: auto;
+          font-weight: 400;
+          color: $colorDark;
+        }
+        .total-p {
+          font-weight: 500;
+          color: $colorDark;
+        }
+        .total {
+          color: $pink;
+        }
+      }
+    }
+    @media (max-width: 400px) {
+      width: 100%;
+      box-shadow: none;
+      padding: 10px;
+    }
+  }
+
+  .price {
+    color: $pink;
+    font-weight: 500;
+    font-style: normal;
   }
 
   .blog-img-grid {
@@ -282,9 +537,6 @@ html:not([data-scroll="0"]) {
   }
 
   .blogMainImg {
-    // position: relative;
-    // width: 100%;
-    // margin: 2% 0;
     width: 70%;
     margin: 2% auto;
   }
@@ -318,6 +570,6 @@ html:not([data-scroll="0"]) {
   }
 
   @media (max-width: 640px) {
-    width: 80%;
+    width: 85%;
   }
 }

@@ -113,6 +113,7 @@ a {
   border-radius: 5px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
   display: block;
+  margin-bottom: 15px;
 }
 
 #rightLP {
@@ -124,14 +125,20 @@ a {
 }
 
 #lpHeading {
-  font-size: 1.3rem;
-  font-weight: 700;
   padding-bottom: 1px;
   transition: 0.5s;
-
-  a:hover {
-    opacity: 0.8;
+  // margin-bottom: 50px;
+  color: #212020;
+  text-decoration: none;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #212020;
+    margin-bottom: 15px;
   }
+}
+#lpHeading:hover {
+  color: $blue
 }
 
 #lpSubHeading {
@@ -702,7 +709,7 @@ form {
 
   #leftLP {
     width: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 20px;
   }
 
   #lpLook {
@@ -745,7 +752,7 @@ form {
 
   .rImage {
     width: 100%;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
   }
 
   .mailingList {

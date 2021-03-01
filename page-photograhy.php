@@ -105,10 +105,50 @@ get_header();
 							<a href="http://bouncingborders.com/wp-content/uploads/2020/10/daylan@2x.png" >
 							<div class="item">
 								<span class="overlay"></span>
-								<img src="http://bouncingborders.com/wp-content/uploads/2020/09/sicily@2x.jpg" alt="Sicily">
+								<img src="http://bouncingborders.com/wp-content/uploads/2020/10/daylan@2x.png" alt="Dalyan">
 								<p>Dalyan, Turkey</p>
 							</div>
 							</a>
+
+							<a href="http://bouncingborders.com/2021/02/24/amsterdam-photos/" >
+							<div class="item">
+								<span class="overlay"></span>
+								<img src="http://bouncingborders.com/wp-content/uploads/2021/02/amsterdam-placeholder@2x.jpg" alt="Amsterdam">
+								<p>Amsterdam, Netherlands</p>
+							</div>
+							</a>
+
+							<a href="http://bouncingborders.com/2021/02/24/brussels-photos/" >
+							<div class="item">
+								<span class="overlay"></span>
+								<img src="http://bouncingborders.com/wp-content/uploads/2021/02/brussels@2x.jpg" alt="Brussels">
+								<p>Brussels, Belgium</p>
+							</div>
+							</a>
+							<a href="http://bouncingborders.com/2021/02/24/ghent-photos/" >
+							<div class="item">
+								<span class="overlay"></span>
+								<img src="http://bouncingborders.com/wp-content/uploads/2021/02/ghent@2x.jpg" alt="Ghent">
+								<p>Ghent, Belgium</p>
+							</div>
+							</a>
+
+							<a href="http://bouncingborders.com/2021/02/24/bruges/" >
+							<div class="item">
+								<span class="overlay"></span>
+								<img src="http://bouncingborders.com/wp-content/uploads/2021/02/bruges@2x.jpg" alt="Bruges">
+								<p>Bruges, Belgium</p>
+							</div>
+							</a>
+
+							<a href="http://bouncingborders.com/2021/02/24/luxembourg-photos/" >
+							<div class="item">
+								<span class="overlay"></span>
+								<img src="http://bouncingborders.com/wp-content/uploads/2021/02/luxembourg@2x.jpg" alt="Luxembourg">
+								<p>Luxembourg, Luxembourg</p>
+							</div>
+							</a>
+
 
 							
 

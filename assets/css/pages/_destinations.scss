@@ -77,10 +77,9 @@
   margin: 80px 10%;
 
   .select-con {
-    // width: 50%;
-
+    width: 100%;
     #destinations-drop {
-      // width: 40%;
+      width: 280px;
       margin: 0 auto;
       margin-bottom: 40px;
       height: 40px;
@@ -96,27 +95,27 @@
       padding-left: 20px;
       cursor: pointer;
     }
+    @media(max-width: 450px) {
+        #destinations-drop {
+          width: 100%;
+      }
+    }
   }
 
   .destinations-grid {
-    display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     box-sizing: border-box;
-
+    display: flex;
     #dest-turkey {
       display: none;
     }
 
 
     .destination-tiles {
-      height: 550px;
-      overflow: auto;
-
-
+      width: 100%;
       .tile {
         width: 280px;
-        margin: 0 auto;
         height: 90px;
+        margin: 0 auto;
         background: rgba(0, 0, 0, 0.4);
         border-radius: 7px;
         display: flex;
@@ -126,7 +125,6 @@
         margin-bottom: 25px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         cursor: pointer;
-
         .tile-bg {
           width: 100%;
           height: 100%;
@@ -186,12 +184,21 @@
       .tile:hover {
         box-shadow: 0 0px 15px rgba(0, 0, 0, 0.20);
       }
+
+      @media(max-width: 450px) {
+        .tile {
+          width: 100%;
+          .date {
+            display: none;
+          }
+        }
+      } 
     }
 
     .destinations-blog {
       width: 100%;
       box-sizing: border-box;
-
+      display: none;
       .blog-wrapper {
         width: 90%;
         margin: 0 auto;
@@ -210,15 +217,6 @@
 }
 
 @media (max-width: 460px) {
-  .select-con {
-    width: 100%;
-
-    #destinations-drop {
-      width: 50%;
-    }
-
-  }
-
   .destinations-grid {
     grid-template-columns: 1fr;
     width: 100%;
@@ -236,15 +234,6 @@
 
 
 @media (min-width: 460px) and (max-width: 640px) {
-  .select-con {
-    width: 100%;
-
-    #destinations-drop {
-      width: 50%;
-    }
-
-  }
-
   .destinations-grid {
     grid-template-columns: 1fr;
     width: 100%;
@@ -261,14 +250,6 @@
 }
 
 @media (min-width: 640px) and (max-width: 868px) {
-  .select-con {
-    width: 50%;
-
-    #destinations-drop {
-      width: 50%;
-    }
-  }
-
   .destinations-grid {
     grid-template-columns: 1fr 1fr;
 
@@ -280,15 +261,6 @@
 }
 
 @media (min-width: 868px) and (max-width: 1161px) {
-  .select-con {
-    width: 50%;
-
-    #destinations-drop {
-      width: 40%;
-
-    }
-  }
-
   .destinations-grid {
     grid-template-columns: 1fr 1fr;
 
@@ -301,21 +273,11 @@
 }
 
 @media (min-width: 1161px) {
-  .select-con {
-    width: 50%;
-
-    #destinations-drop {
-      width: 40%;
-    }
-  }
-
   .destinations-grid {
     grid-template-columns: 1fr 1fr;
 
     .tile {
       width: 70%;
     }
-
-
   }
 }
